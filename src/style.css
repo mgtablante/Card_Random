@@ -1,1 +1,66 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: rgba(8, 80, 8, 0.925);
+}
+.myCard {
+  background-color: white;
+  width: 18rem;
+  height: 25rem;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  font-size: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.myCard.heart::before {
+  content: "\2665";
+  align-self: flex-start;
+  padding-left: 2rem;
+  color: red;
+}
+.myCard.heart::after {
+  content: "\2665";
+  align-self: flex-end;
+  padding-right: 2rem;
+  color: red;
+}
+.myCard.blackclub::before {
+  content: "\2663";
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+.myCard.blackclub::after {
+  content: "\2663";
+  align-self: flex-end;
+  padding-right: 2rem;
+}
+.myCard.spades::before {
+  content: "\2660";
+  align-self: flex-start;
+  padding-left: 2rem;
+}
+.myCard.spades::after {
+  content: "\2660";
+  align-self: flex-end;
+  padding-right: 2rem;
+}
+.myCard.diamond::before {
+  content: "\2666";
+  align-self: flex-start;
+  padding-left: 2rem;
+  color: red;
+}
+.myCard.diamond::after {
+  content: "\2666";
+  align-self: flex-end;
+  padding-right: 2rem;
+  color: red;
+}
+.buttonRandom {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
